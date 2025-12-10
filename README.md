@@ -1,31 +1,33 @@
 # TDLib for Android
 
-## What is this?
+[![TDLib](https://img.shields.io/badge/TDLib-1.8.58-orange.svg)](https://github.com/tdlib/td)
+[![](https://jitpack.io/v/fazilus/tdlib-android.svg)](https://jitpack.io/#fazilus/tdlib-android)
+[![License](https://img.shields.io/badge/License-BSL--1.0-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com)
+[![Language](https://img.shields.io/badge/Language-Java%20%7C%20Kotlin-purple.svg)](https://kotlinlang.org)
 
-[TDLib](https://github.com/tdlib/td) is a cross-platform library to access Telegram. This library contains pre-compiled native libraries (.so files) and Java wrappers for use in Android projects. Both Java and Kotlin projects are supported.\
-**Current version is TDLib 1.8.58. Build date: December 09 2025.**
+[TDLib](https://github.com/tdlib/td) is a cross-platform library for building Telegram clients. This library contains pre-compiled native libraries (.so files) and Java wrappers for use in Android projects. Both Java and Kotlin projects are supported.
 
 ## What is it for?
 
 Why do you need this library if you can build TDLib yourself? The answer is quite simple:
 - **Ready to use**   — no need to spend time building from source;
-- **Fully Identical** — fully compliant with official TDLib;
-- **Easy updates**   — my library will be updated with important TDLib updates, you just need to update the library instead of building it yourself every time...
+- **Identical functionality** — fully compliant with official TDLib;
+- **Easy updates**   — this library will be updated with important TDLib updates, you just need to update the library instead of building it yourself every time
 
-and, the most important reason is why I started creating a separate library:
+...and the most important reason why I started creating a separate library:
 - **Android Studio** will no longer mark all accesses to TDLib as "errors", because now it sees its code.
 
-If you are still interested in building the library from scratch, then refer to this:\
-[Official build instructions](https://github.com/tdlib/td/tree/master/example/android)\
-[My more detailed build instructions]()
+If you are still interested in building the library from scratch, refer to these guides:\
+[Official build instructions](https://github.com/tdlib/td/tree/master/example/android) or [My more detailed build instructions](BUILD.md)
 
 ## Installation
 
-### For Kotlin DSL (settings.gradle.kts + build.gradle.kts)
+### For Kotlin DSL (`settings.gradle.kts` + `build.gradle.kts`)
 
 #### Step 1: Add JitPack repository
 
-In your **settings.gradle.kts** (project root):
+In your `settings.gradle.kts` (project root):
 
 ```kotlin
 pluginManagement {
@@ -47,7 +49,7 @@ dependencyResolutionManagement {
 
 #### Step 2: Add dependency
 
-In your **build.gradle.kts** (:app):
+In your `build.gradle.kts` (:app):
 
 ```kotlin
 dependencies {
@@ -62,7 +64,7 @@ dependencies {
 }
 ```
 
-and in **libs.version.toml**:
+and in `libs.version.toml`:
 
 ```kotlin
 [versions]
@@ -79,11 +81,11 @@ Click **File → Sync Project with Gradle Files** in Android Studio.
 
 ---
 
-### For Groovy (settings.gradle + build.gradle)
+### For Groovy (`settings.gradle` + `build.gradle`)
 
 #### Step 1: Add JitPack repository
 
-In your **settings.gradle** (project root):
+In your `settings.gradle` (project root):
 
 ```groovy
 pluginManagement {
@@ -103,7 +105,7 @@ dependencyResolutionManagement {
 }
 ```
 
-**OR** if you use legacy format, in your **build.gradle** (project root):
+**OR** if you use legacy format, in your `build.gradle` (project root):
 
 ```groovy
 allprojects {
@@ -117,7 +119,7 @@ allprojects {
 
 #### Step 2: Add dependency
 
-In your **app/build.gradle**:
+In your `app/build.gradle`:
 
 ```groovy
 dependencies {
