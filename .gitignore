@@ -1,0 +1,15 @@
+# Default
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# TDLib Library
+tdlib/build
+tdlib/src/main/javadoc/
