@@ -1,7 +1,7 @@
 # TDLib for Android
 
 [![](https://jitpack.io/v/fazilus/tdlib-android.svg)](https://jitpack.io/#fazilus/tdlib-android)
-[![TDLib](https://img.shields.io/badge/TDLib-1.8.58-orange.svg)](https://github.com/tdlib/td)
+[![TDLib](https://img.shields.io/badge/TDLib-1.8.60-orange.svg)](https://github.com/tdlib/td)
 [![License](https://img.shields.io/badge/License-BSL--1.0-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com)
 [![Language](https://img.shields.io/badge/Language-Java%20%7C%20Kotlin-purple.svg)](https://kotlinlang.org)
@@ -11,12 +11,10 @@
 ## What is it for?
 
 Why do you need this library if you can build TDLib yourself? The answer is quite simple:
-- **Ready to use**   — no need to spend time building from source;
+- **Ready to use** — no need to spend time building from source;
 - **Identical functionality** — fully compliant with official TDLib;
-- **Easy updates**   — this library will be updated with important TDLib updates, you just need to update the library instead of building it yourself every time
-
-...and the most important reason why I started creating a separate library:
-- **Android Studio** will no longer mark all accesses to TDLib as "errors", because now it sees its code.
+- **Easy updates** — this library will be updated with important TDLib updates, you just need to update the library instead of building it yourself every time
+- **Perfect for Android Studio** — IDE will no longer mark all accesses to TDLib as "errors", because now it sees its code.
 
 If you are still interested in building the library from scratch, refer to these guides:\
 [Official build instructions](https://github.com/tdlib/td/tree/master/example/android) or [My more detailed build instructions](https://github.com/fazilus/tdlib-android/blob/main/BUILD.MD) 
@@ -45,7 +43,7 @@ In your `build.gradle.kts` (:app):
 
 ```kotlin
 dependencies {
-    implementation("com.github.fazilus:tdlib-android:1.8.58")
+    implementation("com.github.fazilus:tdlib-android:1.8.60")
 }
 ```
 
@@ -60,7 +58,7 @@ and in `libs.version.toml`:
 
 ```kotlin
 [versions]
-tdlib = "1.8.58"
+tdlib = "1.8.60"
 
 [libraries]
 # Core
@@ -107,7 +105,7 @@ In your `app/build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.github.fazilus:tdlib-android:1.8.58'
+    implementation 'com.github.fazilus:tdlib-android:1.8.60'
 }
 ```
 
